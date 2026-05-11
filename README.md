@@ -1,24 +1,34 @@
-# 📊 GerencIA
+# 📅 GerencIA
 
-GerencIA é um sistema de gestão inteligente desenvolvido pela LealSoftLabs, focado em automação de processos empresariais, organização de dados e aumento de produtividade através de tecnologia.
+GerencIA é um sistema de agendamento inteligente desenvolvido pela LealSoftLabs, focado em salões de beleza, barbearias e negócios que trabalham com horários e atendimentos.
 
 ---
 
 ## 🚀 Sobre o projeto
 
-O GerencIA é uma plataforma web criada para centralizar e automatizar processos de gestão, oferecendo uma experiência simples, rápida e escalável para empresas.
+O GerencIA foi criado para facilitar o gerenciamento de agendas, clientes e serviços em estabelecimentos que dependem de marcações de horário.
 
-O objetivo do sistema é reduzir tarefas manuais e melhorar a tomada de decisão através de tecnologia.
+O sistema permite que negócios organizem seus atendimentos de forma simples, reduzindo faltas, atrasos e conflitos de agenda.
+
+---
+
+## 💇‍♂️ Para quem é
+
+- Salões de beleza
+- Barbearias
+- Clínicas de estética
+- Estúdios de manicure/pedicure
+- Profissionais autônomos de atendimento por horário
 
 ---
 
 ## 🧠 Objetivo
 
-- Automatizar processos empresariais
-- Centralizar informações em um único sistema
-- Melhorar produtividade operacional
-- Facilitar gestão de dados e operações
-- Servir como base para um SaaS escalável
+- Automatizar agendamentos
+- Evitar conflitos de horários
+- Melhorar organização do negócio
+- Reduzir cancelamentos e faltas
+- Facilitar controle de clientes e serviços
 
 ---
 
@@ -43,13 +53,21 @@ O objetivo do sistema é reduzir tarefas manuais e melhorar a tomada de decisão
 
 ---
 
+## 📦 Funcionalidades
+
+- Agendamento de horários
+- Cadastro de clientes
+- Cadastro de serviços
+- Controle de agenda por profissional
+- Autenticação de usuários
+- Painel administrativo
+- Interface responsiva
+
+---
+
 ## 🧱 Arquitetura
 
-Este projeto utiliza monorepo:
-
-frontend/
-├── src/
-├── public/
+O projeto segue estrutura monorepo:
 
 backend/
 ├── src/
@@ -57,16 +75,10 @@ backend/
 ├── services/
 ├── security/
 
----
-
-## 🔐 Funcionalidades
-
-- Autenticação de usuários
-- Controle de acesso (roles/permissões)
-- Dashboard administrativo
-- Gestão de dados e operações
-- API REST estruturada
-- Interface responsiva
+frontend/
+├── src/
+├── pages/
+├── components/
 
 ---
 
