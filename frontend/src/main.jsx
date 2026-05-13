@@ -1,4 +1,8 @@
 import React from "react";
+import Login from "./pages/auth/Login";
+import Register from "./pages/auth/Register";
+import ForgotPassword from "./pages/auth/ForgotPassword";
+import ResetPassword from "./pages/auth/ResetPassword";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route, Navigate, useLocation } from "react-router-dom";
 import {
@@ -791,21 +795,37 @@ function TableCard({ title, rows, columns, labels }) {
 function Root() {
   return (
     <BrowserRouter>
-      <AppShell>
-        <Routes>
-          <Route path="/" element={<Navigate to="/dashboard" />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/agenda" element={<Agenda />} />
-          <Route path="/clientes" element={<Clientes />} />
-          <Route path="/profissionais" element={<Profissionais />} />
-          <Route path="/servicos" element={<Servicos />} />
-          <Route path="/financeiro" element={<Financeiro />} />
-          <Route path="/comissoes" element={<Comissoes />} />
-          <Route path="/marketing-ia" element={<MarketingIA />} />
-          <Route path="/relatorios" element={<Relatorios />} />
-          <Route path="/configuracoes" element={<Configuracoes />} />
-        </Routes>
-      </AppShell>
+      <Routes>
+
+        {/* AUTH */}
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/reset-password" element={<ResetPassword />} />
+
+        {/* APP */}
+        <Route
+          path="*"
+          element={
+            <AppShell>
+              <Routes>
+                <Route path="/" element={<Navigate to="/dashboard" />} />
+                <Route path="/dashboard" element={<Dashboard />} />
+                <Route path="/agenda" element={<Agenda />} />
+                <Route path="/clientes" element={<Clientes />} />
+                <Route path="/profissionais" element={<Profissionais />} />
+                <Route path="/servicos" element={<Servicos />} />
+                <Route path="/financeiro" element={<Financeiro />} />
+                <Route path="/comissoes" element={<Comissoes />} />
+                <Route path="/marketing-ia" element={<MarketingIA />} />
+                <Route path="/relatorios" element={<Relatorios />} />
+                <Route path="/configuracoes" element={<Configuracoes />} />
+              </Routes>
+            </AppShell>
+          }
+        />
+
+      </Routes>
     </BrowserRouter>
   );
 }
