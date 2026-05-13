@@ -19,7 +19,7 @@
 * { box-sizing: border-box; }
 body {
   margin: 0;
-  font-family: Inter, system-ui, sans-serif;
+  font-family: Poppins, system-ui, sans-serif;
   color: var(--text);
   background:
     radial-gradient(circle at 15% 5%, rgba(59,130,246,.18), transparent 30%),
