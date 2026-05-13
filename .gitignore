@@ -1,0 +1,29 @@
+# Backend (Java / Spring)
+backend/target/
+*.class
+*.jar
+*.war
+*.log
+
+# Frontend (Node)
+frontend/node_modules/
+node_modules/
+frontend/dist/
+frontend/.env
+
+# Environment
+.env
+*.env
+
+# Logs Node
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
