@@ -27,3 +27,7 @@ yarn-error.log*
 
 # OS
 .DS_Store
+
+DB_USER=postgres
+DB_PASSWORD=sua_senha_supabase
+JWT_SECRET=uma_chave_bem_grande_com_256_bits_no_minimo
